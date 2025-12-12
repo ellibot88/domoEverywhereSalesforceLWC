@@ -1,0 +1,18 @@
+.embed-container {
+    padding: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    background-color: var(--slds-g-color-neutral-base-100, #ffffff);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.domo-iframe {
+    width: 100%;
+    border: none;
+    border-width: 0;
+    display: block;
+    background-color: var(--slds-g-color-neutral-base-100, #ffffff);
+    outline: none;
+}
+

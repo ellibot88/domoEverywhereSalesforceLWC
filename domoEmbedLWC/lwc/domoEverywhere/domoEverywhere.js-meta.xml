@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Domo Everywhere</masterLabel>
+    <description>Embed a card or page from Domo with filtering support.</description>
+    <targets>
+        <target>lightning__RecordPage</target>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage, lightning__HomePage, lightning__RecordPage">
+            <property label="Content" name="embedType" type="String" datasource="card,dashboard"/>
+            <property label="Embed Id" name="embedId" type="String"/>
+            <property label="Height in pixels" name="frameHeight" type="Integer"/>
+            <property label="Filter Column" name="filterColumn" type="String" description="Domo column to filter on (e.g., Id, Account.Id)"/>
+            <property label="Filter Value Field" name="filterValueField" type="String" description="Salesforce field API name to get filter value from current record (e.g., Id, AccountId, Account.Id)"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
+
