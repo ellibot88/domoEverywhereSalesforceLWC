@@ -56,27 +56,9 @@ This Lightning Web Component embeds a Domo dashboard or card with dynamic filter
 4. The Apex class builds a JSON payload with filters (matching the Visualforce example structure)
 5. The filtered embed token is generated and used to load the Domo dashboard
 
-## Filter Payload Structure
-
-The component generates a filter payload matching the Visualforce example:
-```json
-{
-  "sessionLength": 1440,
-  "authorizations": [{
-    "token": "embed_id",
-    "permissions": ["READ", "FILTER", "EXPORT"],
-    "filters": [{
-      "column": "Id",
-      "operator": "IN",
-      "values": ["record_id_value"]
-    }]
-  }]
-}
-```
-
 ## Notes
 
 - The component automatically resubmits the form when the record changes
 - If no filter is configured, the dashboard loads without filtering
 - For relationship fields, provide the full field path (e.g., "Account.Id")
-- The filter operator is always "IN" (matching the Visualforce example)
+- The filter operator is always "IN"
