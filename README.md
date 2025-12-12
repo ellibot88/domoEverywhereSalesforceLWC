@@ -18,11 +18,15 @@ This Lightning Web Component embeds a Domo dashboard or card with dynamic filter
 2. **Add Remote Site Settings**:
    - Go to Setup → Remote Site Settings
    - Add `https://api.domo.com` as a new remote site
+   - Add `https://public.domo.com` as a new remote site
+   - Go to Setup → Trusted URLs
+   - Add `https://public.domo.com`
 
 3. **Deploy the Component**:
-   ```bash
+  -  You can deploy to your org using the Salesforce CLI   ```bash
    sf project deploy start --source-dir force-app --target-org your-org-alias
    ```
+   
 
 ## Usage
 
