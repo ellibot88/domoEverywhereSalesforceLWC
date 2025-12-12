@@ -24,7 +24,9 @@ This Lightning Web Component embeds a Domo dashboard or card with dynamic filter
 
 3. **Deploy the Component**:
   -  You can deploy to your org using the Salesforce CLI
-    ```bash sf project deploy start --source-dir force-app --target-org your-org-alias```
+  -  ```bash sf project deploy start --source-dir force-app --target-org your-org-alias```
+  -  Or, you can deploy manually using Workbench: https://workbench.developerforce.com/
+  -  Login to Org → Migration → Deploy → Choose Zip File → Next → Deploy
    
 
 ## Usage
